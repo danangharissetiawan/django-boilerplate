@@ -1,17 +1,14 @@
-import os
-import environ
 from pathlib import Path
 from manage import get_env_variable
 
 
-# BASE_DIR = Path(__file__).resolve().parent.parent
-ROOT_DIR = str(environ.Path(__file__) - 4)
-APPS_DIR = str(os.path.join(ROOT_DIR,'apps'))
-TEMPLATES_DIR = str(os.path.join(APPS_DIR,'templates'))
-STATIC_DIR = str(os.path.join(APPS_DIR,'static'))
-MEDIA_ROOT = str(os.path.join(APPS_DIR,'media'))
-DATABASE_FILE_NAME = str(os.path.join(APPS_DIR,'db.sqlite3'))
-STATIC_ROOT = str(os.path.join(ROOT_DIR,'staticfiles'))
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent.parent
+APPS_DIR = ROOT_DIR / 'apps'
+TEMPLATES_DIR = APPS_DIR / 'templates'
+STATIC_DIR = APPS_DIR / 'static'
+MEDIA_ROOT = APPS_DIR / 'media'
+DATABASE_FILE_NAME = APPS_DIR / 'db.sqlite3'
+STATIC_ROOT = ROOT_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = [STATIC_DIR, ]
 
@@ -99,7 +96,7 @@ BOOTSTRAP5 = {
 }
 
 
-MIDDLEWARE = [
+BUILT_IN_MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -108,6 +105,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+THIRD_PARTY_MIDDLEWARE = []
+USER_DEFINED_MIDDLEWARE = []
+MIDDLEWARE = BUILT_IN_MIDDLEWARE + THIRD_PARTY_MIDDLEWARE + USER_DEFINED_MIDDLEWARE
 
 
 ROOT_URLCONF = 'config.urls'
