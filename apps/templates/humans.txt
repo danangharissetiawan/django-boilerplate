@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Danang Haris Setiawan -- Developer -- @mr.danang_haris
+
+# THANKS
+    Thanks to all the django boilerplate users, who encourage me to keep developing it.
+
+# TECHNOLOGY COLOPHON
+    Django
+    HTML5 Boilerplate
+    Bootstrap5
+    Debug Toolbar
