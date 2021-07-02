@@ -1,9 +1,21 @@
 import os
+import environ
 from pathlib import Path
 from manage import get_env_variable
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = str(environ.Path(__file__) - 4)
+APPS_DIR = str(os.path.join(ROOT_DIR,'apps'))
+TEMPLATES_DIR = str(os.path.join(APPS_DIR,'templates'))
+STATIC_DIR = str(os.path.join(APPS_DIR,'static'))
+MEDIA_ROOT = str(os.path.join(APPS_DIR,'media'))
+DATABASE_FILE_NAME = str(os.path.join(APPS_DIR,'db.sqlite3'))
+STATIC_ROOT = str(os.path.join(ROOT_DIR,'staticfiles'))
+MEDIA_URL = '/media/'
+STATICFILES_DIRS = [STATIC_DIR, ]
+
+
 DJANGO_SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 SECRET_KEY = DJANGO_SECRET_KEY
 
@@ -39,7 +51,9 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            TEMPLATES_DIR,
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -59,7 +73,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DATABASE_FILE_NAME,
     }
 }
 
