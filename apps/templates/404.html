@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Page not found{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1>Page not found</h1>
+        <p>Sorry but we couldn't find the page that you are looking for.</p>
+        <p>Try refreshing the page, or go to our <a href="{% url 'home' %}">home page</a></p>
+    </div>
+{% endblock content %}
