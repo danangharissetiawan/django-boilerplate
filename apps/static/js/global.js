@@ -1,2 +1,2 @@
 // global js code goes here
-alert("js is working");
+// alert("js is working");
