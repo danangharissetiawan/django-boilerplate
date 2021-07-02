@@ -1,7 +1,7 @@
 from pathlib import Path
 from manage import get_env_variable
 
-
+BASE_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent.parent
 APPS_DIR = ROOT_DIR / 'apps'
 TEMPLATES_DIR = APPS_DIR / 'templates'
@@ -32,11 +32,6 @@ LOCAL_APPS = [
     'main',
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
-
-
-# default uses locally shipped version at 'fontawesome/css/font-awesome.min.css'
-FONTAWESOME_CSS_URL = '//cdn.example.com/fontawesome-min.css'  # absolute url
-
 
 # Default settings
 BOOTSTRAP5 = {
