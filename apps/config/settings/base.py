@@ -36,6 +36,11 @@ LOCAL_APPS = [
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
+
+# default uses locally shipped version at 'fontawesome/css/font-awesome.min.css'
+FONTAWESOME_CSS_URL = '//cdn.example.com/fontawesome-min.css'  # absolute url
+
+
 # Default settings
 BOOTSTRAP5 = {
 
@@ -120,6 +125,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
