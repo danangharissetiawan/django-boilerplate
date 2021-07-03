@@ -18,11 +18,18 @@ from django.urls import path, include
 from manage import get_env_variable
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
+from main.views import home_files
+
 
 urlpatterns = [
+    path('<filename>', home_files, name='home-files'),
+]
+
+urlpatterns += i18n_patterns (
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-]
+)
 
 
 DJANGO_SETTINGS_MODULE = get_env_variable('DJANGO_SETTINGS_MODULE')

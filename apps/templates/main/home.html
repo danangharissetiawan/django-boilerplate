@@ -1,6 +1,8 @@
+{% load static, i18n, l10n %}
 {% extends "base.html" %}
 {% load bootstrap5 %}
-{% load static %}
+
+
 
 {% block title %} Home
 {% endblock %}
@@ -10,21 +12,32 @@
 
 {% block content %}
     <div class="jumbotron centered-text">
-        <h1>Hello World!</h1>
+        <h1>{% trans "Hello World!" %}</h1>
     </div>
 
-    <p class="centered-text"><span class="text-muted">This is a bootstrapped text - if different from the one above 
-        (i.e., it is greyish),
-        Bootstrap works!</span></p>
+    <p class="centered-text">
+        <span class="text-muted">{% blocktrans %}This is a bootstrapped text - if different from the one above (i.e., it is greyish), Bootstrap works!{% endblocktrans %}</span>
+    </p>
     <div class="container-fluid">
-        <p>Our media server works if you can successfully see twitter's logo here:
+        <p>{% blocktrans %}Our media server works if you can successfully see twitter's logo here:{% endblocktrans %}
             <a href="https://twitter.com/danangharisset1" title="tumbling programmer's twitter account">
                 <img src="{{ MEDIA_URL }}twitter48.png" alt="twitter logo"></a>
         </p>
-        <p>Static-serving files works too if you can successfully see twitter's logo here:
+        <p>{% blocktrans %}Static-serving files works too if you can successfully see twitter's logo here:{% endblocktrans %}
             <a href="https://twitter.com/danangharisset1" title="tumbling programmer's twitter account">
                 <img src="{% static 'img/twitter48.png'%}" alt="twitter logo"></a>
         </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2 id="local-date">{{today}}</h2>
+        <p>This is the time using your local information </p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 id="non-local-date">{{today|unlocalize}}</h2>
+        <p>This is the default time format.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
     </div>
 {% endblock %}
 
