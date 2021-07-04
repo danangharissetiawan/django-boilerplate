@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <mr.danangharissetiawan@gmail.com>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-03 07:28+0000\n"
+"POT-Creation-Date: 2021-07-04 12:12+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: DANANG HARIS SETIAWAN <mr.danangharissetiawan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,10 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: config/settings/base.py:165
+#: config/settings/base.py:167
 msgid "English"
 msgstr ""
 
-#: config/settings/base.py:166
+#: config/settings/base.py:168
 msgid "Indonesia"
 msgstr ""
+
+#~ msgid "Hello World!"
+#~ msgstr "Halo Dunia!"
+
+#~ msgid ""
+#~ "This is a bootstrapped text - if different from the one above (i.e., it "
+#~ "is greyish), Bootstrap works!"
+#~ msgstr ""
+#~ "Ini adalah teks bootstrap - jika berbeda dari yang di atas (yaitu, ini "
+#~ "adalah keabu-abuan), Bootstrap berfungsi!"
+
+#~ msgid ""
+#~ "Our media server works if you can successfully see twitter's logo here:"
+#~ msgstr ""
+#~ "Server media kami berfungsi jika Anda berhasil melihat logo twitter di "
+#~ "sini:"
+
+#~ msgid ""
+#~ "Static-serving files works too if you can successfully see twitter's logo "
+#~ "here:"
+#~ msgstr ""
+#~ "File yang melayani statis juga berfungsi jika Anda berhasil melihat logo "
+#~ "Twittersini:"

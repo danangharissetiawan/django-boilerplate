@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-03 07:28+0000\n"
+"POT-Creation-Date: 2021-07-04 12:12+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: DANANG HARIS SETIAWAN <mr.danangharissetiawan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: templates/main/home.html:14
+#: templates/main/home.html:17
 msgid "Hello World!"
 msgstr "Halo Dunia!"
 
-#: templates/main/home.html:18
+#: templates/main/home.html:21
 msgid ""
 "This is a bootstrapped text - if different from the one above (i.e., it is "
 "greyish), Bootstrap works!"
 msgstr ""
-"Ini adalah teks bootstrap - jika berbeda dari yang di atas (yaitu, ini adalah "
-"keabu-abuan), Bootstrap berfungsi!"
+"Ini adalah teks bootstrap - jika berbeda dari yang di atas (yaitu, ini "
+"adalah keabu-abuan), Bootstrap berfungsi!"
 
-#: templates/main/home.html:21
+#: templates/main/home.html:24
 msgid "Our media server works if you can successfully see twitter's logo here:"
-msgstr "Server media kami berfungsi jika Anda berhasil melihat logo twitter di sini:"
+msgstr ""
+"Server media kami berfungsi jika Anda berhasil melihat logo twitter di sini:"
 
-#: templates/main/home.html:25
+#: templates/main/home.html:28
 msgid ""
 "Static-serving files works too if you can successfully see twitter's logo "
 "here:"
 msgstr ""
-"File yang melayani statis juga berfungsi jika Anda berhasil melihat logo Twitter"
-"sini:"
+"File yang melayani statis juga berfungsi jika Anda berhasil melihat logo "
+"Twittersini:"
+
+#: templates/main/home.html:37
+msgid "This is the time using your local information"
+msgstr "Inilah saatnya menggunakan informasi lokal Anda"
+
+#: templates/main/home.html:38 templates/main/home.html:43
+msgid "View details"
+msgstr "Melihat rincian"
+
+#: templates/main/home.html:42
+msgid "This is the default time format."
+msgstr "Ini adalah format waktu default."

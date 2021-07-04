@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-04 12:01+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/main/home.html:16
+msgid "Hello World!"
+msgstr ""
+
+#: templates/main/home.html:20
+msgid ""
+"This is a bootstrapped text - if different from the one above (i.e., it is "
+"greyish), Bootstrap works!"
+msgstr ""
+
+#: templates/main/home.html:23
+msgid "Our media server works if you can successfully see twitter's logo here:"
+msgstr ""
+
+#: templates/main/home.html:27
+msgid ""
+"Static-serving files works too if you can successfully see twitter's logo "
+"here:"
+msgstr ""

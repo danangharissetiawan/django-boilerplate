@@ -1,7 +1,6 @@
 from pathlib import Path
 from manage import get_env_variable
 
-BASE_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent.parent
 APPS_DIR = ROOT_DIR / 'apps'
 TEMPLATES_DIR = APPS_DIR / 'templates'
@@ -161,8 +160,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-from django.utils.translation import ugettext_lazy as _
+LOCALE_PATHS = (APPS_DIR / 'locale',)
 
+from django.utils.translation import gettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
     ('id', _('Indonesia')),
@@ -170,7 +170,7 @@ LANGUAGES = (
 
 LANGUAGE_CODE = 'en-us'
 
-LOCALE_PATHS = (BASE_DIR / 'locale',)
+
 
 TIME_ZONE = 'Asia/Jakarta'
 

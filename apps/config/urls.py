@@ -33,7 +33,8 @@ urlpatterns += i18n_patterns (
 
 
 DJANGO_SETTINGS_MODULE = get_env_variable('DJANGO_SETTINGS_MODULE')
-if DJANGO_SETTINGS_MODULE == 'config.settings.development':
+# if DJANGO_SETTINGS_MODULE == 'config.settings.development':
+if settings.DEBUG:
     import debug_toolbar
 
     urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
