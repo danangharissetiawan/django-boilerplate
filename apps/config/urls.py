@@ -13,23 +13,30 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import handler403
 from django.contrib import admin
 from django.urls import path, include
 from manage import get_env_variable
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
-from main.views import home_files
+from main import views
+# from django.conf.urls import handler404, handler500
 
 
 urlpatterns = [
-    path('<filename>', home_files, name='home-files'),
+    path('<filename>', views.home_files, name='home-files'),
+    
 ]
 
 urlpatterns += i18n_patterns (
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
 )
+
+handler403 = views.error_403
+handler404 = views.error_404
+handler500 = views.error_500
 
 
 DJANGO_SETTINGS_MODULE = get_env_variable('DJANGO_SETTINGS_MODULE')
@@ -41,3 +48,4 @@ if settings.DEBUG:
 # elif settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

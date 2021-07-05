@@ -30,7 +30,7 @@ if DEBUG:
         'INTERCEPT_REDIRECTS': False,
     }
 else:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['127.0.0.1']
 
 MIDDLEWARE += (
     'livereload.middleware.LiveReloadScript',
