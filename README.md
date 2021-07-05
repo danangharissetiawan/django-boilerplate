@@ -19,7 +19,8 @@ Some of the Django Boilerplate functionalities are:
 - Error pages **403**, **404**, and **500** configured
 - **Livereload server**
 
-You can also see the full [documentation]().
+You can also see the full [documentation](https://djangoboilerplate.readthedocs.io/en/latest/).
 
-To start using the Boilerplate, check out the [requirements]() and next the [quick start]().
+To start using the Boilerplate, check out the [requirements](https://djangoboilerplate.readthedocs.io/en/latest/requirements.html) and next the [quick start](https://djangoboilerplate.readthedocs.io/en/latest/quick_start.html).
 
+Don't forget to [buy me a coffee ](https://www.buymeacoffee.com/darisset) 🥰 ☕.
