@@ -279,4 +279,8 @@ pip-selfcheck.json
 /staticfiles/
 staticfiles
 
+.vscode
+.vscode/
+/.vscode/
+
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,virtualenv,pycharm

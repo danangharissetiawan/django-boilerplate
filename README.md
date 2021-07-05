@@ -1,8 +1,3 @@
-.. django-boilerplate documentation master file, created by
-   sphinx-quickstart on Mon Jul  5 15:00:37 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to django-boilerplate's documentation!
 ==============================================
 
@@ -25,27 +20,8 @@ Some of the Django Boilerplate functionalities are:
 - **Livereload server**
 
 Moreover, you can learn how to create this boilerplate **step by step**
-in the `django-boilerplate`_. There you can learn, step by step, how 
+in the [django-boilerplate](https://github.com/danangharissetiawan/django-boilerplate). There you can learn, step by step, how 
 TaskBuster has been done, and even do it yourself if you want to!!
 
-.. _django-boilerplate: https://github.com/danangharissetiawan/django-boilerplate
+To start using the Boilerplate, check out the [requirements]() and next the [quick start]().
 
-
-To start using the Boilerplate, check out the :ref:`requirements`  and next the :ref:`quick_start`.
-
-
-Contents
---------
-
-.. toctree::
-   :maxdepth: 2
-
-   requirements
-   quick_start
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
