@@ -19,9 +19,7 @@ Some of the Django Boilerplate functionalities are:
 - Error pages **403**, **404**, and **500** configured
 - **Livereload server**
 
-Moreover, you can learn how to create this boilerplate **step by step**
-in the [django-boilerplate](https://github.com/danangharissetiawan/django-boilerplate). There you can learn, step by step, how 
-TaskBuster has been done, and even do it yourself if you want to!!
+You can also see the full [documentation]().
 
 To start using the Boilerplate, check out the [requirements]() and next the [quick start]().
 
