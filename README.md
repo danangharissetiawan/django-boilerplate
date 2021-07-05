@@ -1,6 +1,8 @@
 Welcome to django-boilerplate's documentation!
 ==============================================
 
+[![Documentation Status](https://readthedocs.org/projects/djangoboilerplate/badge/?version=latest)](https://djangoboilerplate.readthedocs.io/en/latest/?badge=latest)
+
 This is an awesome **Django Project Boilerplate**!!
 
 With this code, you can start a *complex* Django Project 
